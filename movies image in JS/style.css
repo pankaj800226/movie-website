@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+:root {
+  /* --main-bg-color: #2874f0; */
+}
+body{
+  font-family: sans-serif;
+  background-color: rgb(19, 19, 19);
+ 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+ 
+}
+header {
+  box-shadow: 0 3px 10px rgba(181, 180, 180, 0.2);
+  background-color:  #154c79;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50%;
+    cursor: pointer;
+  width: 88px;
+  padding: 0 25px;
+}
+
+nav ul {
+  height: 58px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav ul li {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0 23px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav ul li a:hover {
+  font-weight: bolder;
+}
+
+.but{
+    margin-top: 19px;
+}
+
+.but a{
+  box-shadow: 0 3px 10px rgba(171, 170, 170, 0.707);
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #1e81b0;
+    text-decoration: none;
+    margin-left: 78px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: 1s;
+    font-weight: 300;
+}
+
+.but a:hover{
+  background-color: #154c79;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  box-shadow: rgba(0, 0, 0, 0.2);
+  width: 30vw;
+  height: 32px;
+  border-radius: 3px;
+  border: none;
+  margin: 0 16px 0 56px;
+  padding: 0 12px;
+}
+
+/* slide image  */
+.slider {
+    width: 90vw;
+    height: 390px;
+    margin: 12px auto;
+    margin-top: 30px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-image: url('marvel.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0px 5px #b2ababed;
+    animation: slider 10s infinite linear;
+
+  }
+  @keyframes slider{
+    0%{ background-image: url('marvel.png');}
+
+    35%{background-image: url('strange.jpg'); }
+
+    75%{background-image: url('marvel\ hero.jpg'); }
+  }
+
+
+  .slider img {
+    /* width: 100%; */
+  }
+  
+  .slider:hover {
+    filter: none(1);
+    transform: scale(1.03);
+  }
+
+.product-list{
+    box-shadow: rgba(0, 0, 0, 0.2);
+  display: flex;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  }
+  .product-list{
+    box-shadow: rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .product img{
+    box-shadow: 0 3px 10px #b2ababed;
+      cursor: pointer;
+      height: 400px;
+      width: 297px;
+      /* width: 319px; */
+      /* margin: 10px; */
+      margin: 50px;
+      transition: 400ms;
+      display: grid;
+      margin-top: 20px;
+      overflow: hidden;
+  }
+  
+  .product img:hover{
+    filter: grayscale(1);
+      transform: scale(1.03);
+  }
+  
+  .product h2{
+      text-align: center;
+      font-weight: 100;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 40px;
+      font-size: 19px;
+      /* transition: 7s; */
+  }
+
+  .product h2:hover{
+    color: yellow;
+  }
+  
+  .product h3{
+      text-align: center;
+      color: #1e81b0;
+      cursor: pointer;
+  }
+
+ 
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 1000px) {
+    nav {
+      flex-direction: column;
+      /* height: 80px; */
+    }
+
+   
+  
+    .slider {
+      height: 40vh;
+    } 
+  
+    .logo {
+      justify-content: center;
+      margin: 12px 0;
+    }
+  
+    nav ul {
+      justify-content: center;
+     
+    }
+  
+    .search {
+      justify-content: center;
+     
+      
+    }
+  
+    .search input {
+      /* margin: 20px 20px; */
+      padding: 3px 50px;
+
+    }
+  
+    nav ul {
+      height: 34px;
+    }
+
+    .container{
+      flex-direction: column;
+    }
+
+    .but a{
+        margin-left: 36%;
+    }
+    .screnshort-image img{
+      height: 207px;
+      margin-left: 2px;
+
+    }
+   
+
+}
+
+
+/* second media  */
+
+@media screen and (max-width: 1000px) {
+    nav {
+      flex-direction: column;
+      height: 220px;
+    }
+  
+    .slider {
+      height: 23vh;
+    }
+  
+    .logo {
+      justify-content: center;
+      margin: 12px 0;
+    }
+
+    .logo img{
+        height: 30px;
+        width: 160px;
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    .search {
+      justify-content: center;
+    }
+  
+    .search input {
+      margin: 12px 16px;
+    }
+  
+    nav ul {
+      height: 34px;
+    }
+
+    .moviName h2{
+     width: 100%;
+
+    }
+
+    .dawnlodMovi a {
+      position: relative;
+      right: 54px;
+  }
+    }
+
+
+
+
+
+
+/* first name movies */
+
+
+.moviName{
+    font-size: 20px;
+
+
+}
+
+.moviName h2{
+  color: rgb(245, 245, 135);
+  width: 70%;
+  margin-top: 50px;
+  margin-left: 32px;
+
+
+}
+
+.pic img{
+  margin-top: 35px;
+  margin-left: 32px;
+}
+
+.moviInfo p{
+  color: #fff;
+  margin-left: 32px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+
+}
+
+.moviInfo span{
+  color: #00ffff;
+  margin-left: 32px;
+  font-size: 30px;
+
+}
+
+.Storyline{
+  margin-left: 32px;
+  color: #00ffff;
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+.Storyline p{
+  width: 70%;
+  color: #fff;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+
+.Screenshots span{
+  margin-top: 25px;
+  margin-left: 32px;
+  color: #00ffff;
+  font-size: 30px;
+
+}
+
+.screnshort-image img{
+  margin-left: 32px;
+  padding: 9px;
+ 
+}
+
+.dawnlodMovi a{
+  background-color: #CBFC01;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 20px 60px;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 30px;
+  border: none;
+  border: 2px solid #CBFC01;
+  transition: 0.4s ease;
+}
+
+.dawnlodMovi a:hover{
+  background-color: #154c79;
+  color: #fff;
+}
+.dawnlodMovi{
+  margin-top: 85px;
+}
+
+
